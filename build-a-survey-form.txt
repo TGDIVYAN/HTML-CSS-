@@ -1,4 +1,4 @@
-** start of undefined **
+** main body of HTML **
 
 <!DOCTYPE html>
 <html lang="en">
@@ -168,5 +168,5 @@ input[type="file"] {
 }
 
 
-** end of undefined **
+** end of styles **
 
