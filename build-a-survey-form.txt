@@ -1,0 +1,172 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">We value your feedback! Please fill out this survey form.</p>
+    </header>
+    <main>
+        <form id="survey-form">
+            <!-- Name Field -->
+            <label id="name-label" for="name">Name:</label>
+            <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                placeholder="Enter your name" 
+                required>
+            
+            <!-- Email Field -->
+            <label id="email-label" for="email">Email:</label>
+            <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="Enter your email" 
+                required>
+            
+            <!-- Number Field -->
+            <label id="number-label" for="number">Age:</label>
+            <input 
+                type="number" 
+                id="number" 
+                name="age" 
+                placeholder="Enter your age" 
+                min="1" 
+                max="120" 
+                required>
+            
+            <!-- Dropdown Field -->
+            <label for="dropdown">What is your favorite programming language?</label>
+            <select id="dropdown" name="language">
+                <option value="python">Python</option>
+                <option value="javascript">JavaScript</option>
+                <option value="java">Java</option>
+                <option value="c++">C++</option>
+            </select>
+
+            <!-- Radio Buttons -->
+            <p>What is your preferred development environment?</p>
+            <label>
+                <input type="radio" name="environment" value="ide" required> IDE
+            </label>
+            <label>
+                <input type="radio" name="environment" value="text-editor"> Text Editor
+            </label>
+
+            <!-- Checkboxes -->
+            <p>Select the technologies you use:</p>
+            <label>
+                <input type="checkbox" name="tech" value="html"> HTML
+            </label>
+            <label>
+                <input type="checkbox" name="tech" value="css"> CSS
+            </label>
+            <label>
+                <input type="checkbox" name="tech" value="javascript"> JavaScript
+            </label>
+
+            <!-- Textarea -->
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" placeholder="Write your comments here..."></textarea>
+
+            <!-- Submit Button -->
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
+
+
+** end of main body HTML**
+
+** this styles are applied to the main body html **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+}
+
+.inline{
+  display: inline; 
+}
+
+
+** end of undefined **
+
